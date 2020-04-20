@@ -1,6 +1,6 @@
 # Cargo Static Build Docker Action
 
-This action builds sttic linked binaries for rust projects, using [clux/muslrust](https://github.com/clux/muslrust).
+This action builds static linked binaries for rust projects, using [clux/muslrust](https://github.com/clux/muslrust).
 
 ## Inputs
 
@@ -25,7 +25,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Build and Test
-      uses: zhxiaogg/cargo-static-build@master
+      uses: alank976/cargo-static-build
       with:
         cmd: cargo test
 ```
